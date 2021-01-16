@@ -1,0 +1,78 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #0c1027;
+    color: white;
+}
+
+/* Top nav bar */
+nav ul{
+    padding: 0;
+    display: inline;
+}
+
+.first-half{
+    float: left;
+}
+
+.last-half{
+    margin-top: 1.4rem;
+    float: right;
+}
+
+.horizontal-list{
+    list-style: none;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-last-name{
+    font-weight: bold;
+}
+
+.search-bar{
+    width: 100%;
+    background-color: #141b41;
+    border-radius: 1rem;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input{
+    padding: 5px;
+    background-color: #141b41;
+    border: 0px;
+    color: white;
+}
+
+#logo, #user{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+#logo{
+    margin-left: 3rem;
+}
+
+#user{
+    margin-right: 3rem;
+}
+
+#nav-fav{
+    margin-inline: 4rem;
+}
+.bell-icon{
+    margin-inline: 2rem;
+}
+
+
+
+
+
