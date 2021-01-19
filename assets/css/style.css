@@ -6,6 +6,10 @@ body{
 }
 
 /* Top nav bar */
+#user-header{
+    height: 20vh;
+}
+
 nav ul{
     padding: 0;
     display: inline;
@@ -70,9 +74,188 @@ nav ul{
 }
 .bell-icon{
     margin-inline: 2rem;
+    position: relative;
 }
 
+.bell-icon::after{
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background-color: red;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
 
+main{
+    margin-left: 6rem;
+}
+/* Highlights */
 
+.highlights-container{
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
+.highlight{
+    width: 30%;
+    height: 90%;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.highlight img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Latest release */
+
+.latest-release{
+    margin-bottom: 1rem;
+}
+
+.latest-release-cards{
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.latest-release-card{
+    width: 40%;
+    height: 40%;
+    background-size: contain;
+    overflow: hidden;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.latest-release-card img{
+    width: 25%;
+    height: 100%;
+}
+
+.latest-release-card span{
+    display: inline-block;
+}
+
+.latest-release-card > div{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* popular artists */
+
+.artists-tab{
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.artist{
+    width: 15%;
+    height: 100%;
+    background-size: contain;
+    overflow: hidden;
+    text-align: center;
+}
+
+.artist img{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+/* Stations */
+
+.stations{
+    margin-top: 3rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #200043;
+}
+
+.stations span{
+    width: 10%;
+    height: 70%;
+    background-size: contain;
+    overflow: hidden;
+    text-align: center;
+}
+
+.station-heading img{
+    width: 100%;
+    height: 100%;
+}
+
+.station img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* generes */
+
+.generes-container{
+    margin-top: 3rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.genere{
+    width: 30%;
+    height: 90%;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.genere img{
+    width: 100%;
+    height: 100%;
+}
+
+/* latest english and latest hindi */
+
+.songs{
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.song{
+    width: 12%;
+    height: 100%;
+    background-size: contain;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.song img{
+    width: 100%;
+    height: 50%;
+}
+
+.song-name{
+    font-weight: bold;
+}
 
