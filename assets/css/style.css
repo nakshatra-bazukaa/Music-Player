@@ -5,6 +5,16 @@ body{
     color: white;
 }
 
+/* main */
+main{
+    float: left;
+    width: 70%;
+    height: 80vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    margin-left: 6rem;
+}
+
 /* Top nav bar */
 #user-header{
     height: 20vh;
@@ -88,9 +98,6 @@ nav ul{
     right: 0;
 }
 
-main{
-    margin-left: 6rem;
-}
 /* Highlights */
 
 .highlights-container{
@@ -139,7 +146,7 @@ main{
     height: 100%;
 }
 
-.latest-release-card span{
+.latest-release-card > span{
     display: inline-block;
 }
 
@@ -149,6 +156,13 @@ main{
 
 .dropdown-content{
     display: none;
+    position: absolute;
+    background-color: #0c1027;
+    width: 200px;
+}
+
+.song-icons-container{
+    position: absolute;
 }
 
 .dropdown:hover .dropdown-content{
@@ -259,3 +273,45 @@ main{
     font-weight: bold;
 }
 
+/* Aside */
+
+.aside{
+    float: right;
+    width: 30%;
+}
+
+.aside-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aside-song-card{
+    width: 100%;
+    height: 4rem;
+}
+
+.aside-song-content > img{
+    width: 3rem;
+    height: 3rem;
+    vertical-align: middle;
+}
+
+.aside-song-card > i{
+    float: right;
+    margin-top: 1rem;
+}
+
+.aside-song-details{
+    display: inline-block;
+}
+
+.aside-song-details > pre{
+    margin: 0;
+}
+
+.aside-content{
+    height: 80vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}

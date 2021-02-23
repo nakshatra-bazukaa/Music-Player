@@ -1,0 +1,99 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #0c1027;
+    color: white;
+}
+
+/* main */
+main{
+    float: left;
+    width: 70%;
+    height: 80vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    margin-left: 6rem;
+}
+
+/* Top nav bar */
+#user-header{
+    height: 20vh;
+}
+
+nav ul{
+    padding: 0;
+    display: inline;
+}
+
+.first-half{
+    float: left;
+}
+
+.last-half{
+    margin-top: 1.4rem;
+    float: right;
+}
+
+.horizontal-list{
+    list-style: none;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-last-name{
+    font-weight: bold;
+}
+
+.search-bar{
+    width: 100%;
+    background-color: #141b41;
+    border-radius: 1rem;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input{
+    padding: 5px;
+    background-color: #141b41;
+    border: 0px;
+    color: white;
+}
+
+#logo, #user{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+#logo{
+    margin-left: 3rem;
+}
+
+#user{
+    margin-right: 3rem;
+}
+
+#nav-fav{
+    margin-inline: 4rem;
+}
+.bell-icon{
+    margin-inline: 2rem;
+    position: relative;
+}
+
+.bell-icon::after{
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background-color: red;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
